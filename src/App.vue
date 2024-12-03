@@ -1,26 +1,50 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Navbar/>
+  <router-view />
+  <WhatsApp/>
+  <Footer />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/NavBar.vue'
+import Footer from './components/FooTer.vue'
+import WhatsApp from './components/WhatsApp.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Navbar,
+    Footer,
+    WhatsApp,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", serif;;
+}
+
+:root{
+  --primary-color:#edf2fc;
+  --secondary-color:#282828;
+}
+
+.dark-theme {
+  /* --primary-color:#292e32; */
+  --primary-color:#202020  ;
+  /* --primary-color:#3f474d; */
+  --secondary-color:#fff;
+}
+
+body {
+  background-size: cover;
+  background-position: right center;
+  background-color: var(--primary-color);
 }
 </style>
