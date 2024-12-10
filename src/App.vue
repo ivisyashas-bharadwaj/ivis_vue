@@ -1,14 +1,16 @@
 <template>
-  <Navbar/>
-  <router-view />
-  <WhatsApp/>
-  <Footer />
+  <LoadingScreen :isLoading="isLoading" />
+  <Navbar v-show="!isLoading"/>
+  <router-view v-show="!isLoading"/>
+  <WhatsApp v-show="!isLoading"/>
+  <Footer v-show="!isLoading"/>
 </template>
 
 <script>
 import Navbar from './components/NavBar.vue'
 import Footer from './components/FooTer.vue'
-import WhatsApp from './components/WhatsApp.vue';
+import WhatsApp from './components/WhatsApp.vue'
+import LoadingScreen from './components/LoadingScreen.vue'
 
 export default {
   name: 'App',
@@ -16,6 +18,29 @@ export default {
     Navbar,
     Footer,
     WhatsApp,
+    LoadingScreen
+  },
+  data() {
+    return {
+      isLoading: true
+    }
+  },
+  mounted() {
+    window.addEventListener('load', this.handleLoad)
+    
+    // Fallback timeout
+    setTimeout(() => {
+      this.isLoading = false
+    }, 1000)
+  },
+  methods: {
+    handleLoad() {
+      this.isLoading = false
+      window.removeEventListener('load', this.handleLoad)
+    }
+  },
+  beforeUnmount() { 
+    window.removeEventListener('load', this.handleLoad)
   }
 }
 </script>
@@ -33,14 +58,33 @@ export default {
 :root{
   --primary-color:#edf2fc;
   --secondary-color:#282828;
+  --bg1:#54d6d8;
+  --card-bg : white;
 }
 
 .dark-theme {
   /* --primary-color:#292e32; */
-  --primary-color:#202020  ;
+  --primary-color:#2d3748  ;
   /* --primary-color:#3f474d; */
-  --secondary-color:#fff;
+  --secondary-color:#f7fafc;
+  --bg1:#1fbabc;
+  --card-bg : #5f7991;
 }
+
+.dark-theme img:not(.picture, .title, .content-body .image img){
+  filter: brightness(0.9) contrast(1.75);
+}
+
+body,
+.theme-transition {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Remove transition interference for specific elements */
+.no-theme-transition,
+.no-theme-transition * {
+  transition: none !important;
+} 
 
 body {
   background-size: cover;

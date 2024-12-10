@@ -23,7 +23,7 @@
       <img src="../assets/Copy of Established in 2021.gif" alt="Roadmap" class="light-image" />
       <img src="../assets/Copy of Established in 2021-dark.gif" alt="Roadmap" class="dark-image" />
     </div>
-
+    <TestimonialSlider :testimonials="testimonialData" />
     <div class="m1-container">
       <div class="heading-container">
         <div class="heading">
@@ -78,9 +78,40 @@
 </template>
 
 <script>
-
+import TestimonialSlider from '@/components/TestimonialSlider.vue';
 
 export default {
+  components:{
+    TestimonialSlider
+  },
+  data(){
+    return {
+      testimonialData: [
+        {
+          id: 1,
+          image: "https://media.licdn.com/dms/image/v2/D5603AQHukFnLLtSKGA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1713717691301?e=1739404800&v=beta&t=LQmmy8ZOTP5y61S7RUPXDlxe7wpXyyNMK_W9OPI7YCc",
+          text: "Meeting Vinay Kumar Venkataramana was a turning point for me. His remarkable expertise in AI and dedication to the field are truly inspiring. I've seen his company, IVIS LABS PRIVATE LIMITED, achieve phenomenal growth, becoming a leader in AI implementation, development, and support. Thank you, Vinay, for your guidance and support in driving Prudent Partners LLP!",
+          name: 'Karthik Bharadwaj',
+          job: 'CEO, Prudent Partners'
+        },
+        {
+          id: 2,
+          image: require('/src/assets/avatar.svg'),
+          text: "The training provided a comfortable and focused learning environment. The teaching approach simplified complex topics, making them easy to grasp and apply effectively.",
+          name: 'Chandana C',
+          job: 'Student'
+        },
+        {
+          id: 3,
+          image: require('/src/assets/avatar.svg'),
+          text: "The training effectively introduced us to the fundamentals of Python, enabling us to solve problem statements with confidence. Overall, it significantly enhanced our skills and understanding of the subject.",
+          name: 'Kalpana Lahari B',
+          job: 'Student'
+        },
+        // Add more testimonials as needed
+      ]
+    }
+  },
   name: "PageContent",  
   methods: {
     openLink(url) {

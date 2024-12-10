@@ -4,6 +4,8 @@ import OurTeam from "@/views/OurTeam.vue";
 import AboutUs from "@/views/AboutUs.vue";
 import { createRouter, createWebHistory } from 'vue-router';
 import NotFound from "@/components/NotFound.vue";
+import ProductsPage from "@/views/ProductsPage.vue";
+
 
 const routes = [
   {
@@ -25,6 +27,11 @@ const routes = [
     path: '/aboutus',
     name: 'aboutus',
     component: AboutUs, 
+  },
+  {
+    path : '/products',
+    name: 'products',
+    component : ProductsPage
   },
   {
     path:'/:catchAll(.*)',

@@ -41,6 +41,16 @@
       </div>
     </div>
 
+    <div class="content-body b-2">
+      <div class="image">
+        <img :src="require('/src/assets/AI Induced Rebranding.gif')"  alt="AI Induced Rebranding" height="300">
+      </div>
+      <div class="content">
+        <h1>AI Induced Rebranding</h1>
+        <p>With the applications of <b>Computer Vision </b>We Empower innovation with AI-driven rebranding that transforms your vision into a future-ready identity.</p>
+      </div>
+    </div>
+
     <!-- Tech Stack Section -->
     <div class="tech-stack">
       <h1>Our Tech Stack</h1>

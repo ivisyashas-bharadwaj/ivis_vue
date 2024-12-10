@@ -7,8 +7,9 @@
       </li>
       <li class="hide hover"><router-link to="/">Home</router-link></li>
       <li class="hide hover"><router-link to="/solutions">Our Solutions</router-link></li>
-      <li class="hide hover"><router-link to="/aboutus">About Us</router-link></li>
+      <li class="hide hover"><router-link to="/products">Our Products</router-link></li>
       <li class="hide hover"><router-link to="/ourteam">Our Team</router-link></li>
+      <li class="hide hover"><router-link to="/aboutus">About Us</router-link></li>
       <li class="stopShowing">
         <input type="checkbox" id="checkbox" v-model="isSidebarVisible" @change="handleToggle">
         <label for="checkbox" class="toggle" style="z-index: 100;">
@@ -22,8 +23,9 @@
       <li><ThemeSwitch /></li>
       <li class="hover"><router-link to="/" @click="closeSidebar">Home</router-link></li>
       <li class="hover"><router-link to="/solutions" @click="closeSidebar">Our Solutions</router-link></li>
-      <li class="hover"><router-link to="/aboutus" @click="closeSidebar">About Us</router-link></li>
+      <li class="hover"><router-link to="/products" @click="closeSidebar">Our Products</router-link></li>
       <li class="hover"><router-link to="/ourteam" @click="closeSidebar">Our Team</router-link></li>
+      <li class="hover"><router-link to="/aboutus" @click="closeSidebar">About Us</router-link></li>
     </ul>
   </nav>
 </template>
@@ -42,7 +44,6 @@ export default {
   },
   methods: {
     handleToggle(event) {
-      // This will be called when the checkbox is clicked
       this.isSidebarVisible = event.target.checked;
     },
     closeSidebar() {
@@ -51,7 +52,6 @@ export default {
     handleClickOutside(event) {
       const sidebar = this.$refs.sidebar;
       const toggle = document.getElementById('checkbox');
-      // Don't close if clicking the toggle or within the sidebar
       if (
         sidebar && 
         !sidebar.contains(event.target) && 
@@ -386,13 +386,13 @@ export default {
     }
     }
 
-    @media (max-width:690px) {
+    @media (max-width:800px) {
     .hide {
         display: none;
     }
     }
 
-    @media (min-width:691px) {
+    @media (min-width:801px) {
     .stopShowing {
         display: none;
     }

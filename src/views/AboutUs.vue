@@ -135,10 +135,18 @@
         </div>
       </div>
     </div>
+
+    <div>
+      <RewardsRecognition/>
+    </div>
   </template>
   
   <script>
+  import RewardsRecognition from '@/components/RewardsRecognition.vue';
   export default {
+    components: {
+      RewardsRecognition
+    },
     data() {
       return {
         profilePic: require('../assets/profile-pic.jpg'),

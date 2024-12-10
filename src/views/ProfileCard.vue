@@ -12,9 +12,6 @@
           <a :href="linkedinUrl" target="_blank" rel="noopener noreferrer">
             <img class="linkedin" src="../assets/linkedin.svg" alt="LinkedIn">
           </a>
-          <a :href="'mailto:' + email " target="_blank" rel="noopener noreferrer">
-            <img class="mail" src="../assets/mail.svg" alt="mail">
-          </a>
         </div>
       </div>
     </div>
