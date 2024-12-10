@@ -147,6 +147,28 @@
     components: {
       RewardsRecognition
     },
+    metaInfo: {
+    title: 'About IVIS LABS - Leading AI Innovation',
+    meta: [
+      {
+        name: 'description',
+        content: 'Learn about IVIS LABS, a leading AI company founded by computer vision experts. Discover our journey, team, and commitment to innovation.'
+      },
+      {
+        name: 'keywords',
+        content: 'IVIS LABS, AI company, computer vision experts, AI innovation, tech company Bangalore, tech company Mysore'
+      },
+      // Open Graph
+      {
+        property: 'og:title',
+        content: 'About IVIS LABS - AI Innovation Leaders'
+      },
+      {
+        property: 'og:description',
+        content: 'Discover the story of IVIS LABS and our mission to transform industries through AI'
+      }
+    ]
+  },
     data() {
       return {
         profilePic: require('../assets/profile-pic.jpg'),

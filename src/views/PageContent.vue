@@ -8,7 +8,7 @@
         <div class="buttons">
           <a href="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/IVIS+Company+Profile.pdf" class="deck-container">
             <button class="deck">
-              <img src="../assets/download.svg" width="20" alt="" />
+              <img src="../assets/download.svg" width="20" alt="Download" />
               <span style="color: white;">Company Deck</span>
             </button>
           </a>
@@ -33,7 +33,7 @@
 
       <div class="services">
         <div class="card card-1">
-          <img src="../assets/1.png" width="100" height="100" />
+          <img src="../assets/1.png" alt="arvr" width="100" height="100" />
           <p class="card__title title-front">Augmented Reality and Virtual Reality</p>
           <div class="card__content">
             <p class="card__title">Augmented Reality and Virtual Reality</p>
@@ -41,7 +41,7 @@
           </div>
         </div>
         <div class="card card-2">
-          <img src="../assets/2.png" />
+          <img src="../assets/2.png" alt="Web apps and mobile apps"/>
           <p class="card__title title-front">Web Application and Mobile Application Development</p>
           <div class="card__content">
             <p class="card__title">Web Application and Mobile Application Development</p>
@@ -49,7 +49,7 @@
           </div>
         </div>
         <div class="card card-3">
-          <img src="../assets/3.png" />
+          <img src="../assets/3.png" alt="Voice user interface"/>
           <p class="card__title title-front">Voice User Interface</p>
           <div class="card__content">
             <p class="card__title">Voice User Interface</p>
@@ -57,7 +57,7 @@
           </div>
         </div>
         <div class="card card-4">
-          <img src="../assets/4.png" />
+          <img src="../assets/4.png" alt="Corporate and Professional Training" />
           <p class="card__title title-front">Corporate and Professional Training</p>
           <div class="card__content">
             <p class="card__title">Corporate and Professional Training</p>
@@ -65,7 +65,7 @@
           </div>
         </div>
         <div class="card card-5">
-          <img src="../assets/5.png" />
+          <img src="../assets/5.png" alt="Ai Integration" />
           <p class="card__title title-front">AI Integration for fashion, infrastructure, health tech & EdTech Domains</p>
           <div class="card__content">
             <p class="card__title">AI Integration for fashion, infrastructure, health tech & EdTech Domains</p>
@@ -83,6 +83,28 @@ import TestimonialSlider from '@/components/TestimonialSlider.vue';
 export default {
   components:{
     TestimonialSlider
+  },
+  metaInfo: {
+    title: 'IVIS LABS - Intelligent Vision Solutions | AI & Computer Vision',
+    meta: [
+      {
+        name: 'description',
+        content: 'IVIS LABS provides cutting-edge AI and Computer Vision solutions for enterprises. Transform your business with our intelligent technology solutions.'
+      },
+      {
+        name: 'keywords',
+        content: 'IVIS LABS, AI solutions, Computer Vision, Enterprise AI, Digital Transformation, AI Company India'
+      },
+      // Open Graph
+      {
+        property: 'og:title',
+        content: 'IVIS LABS - Transforming Business Through AI'
+      },
+      {
+        property: 'og:description',
+        content: 'Leading provider of AI and Computer Vision solutions for enterprise digital transformation'
+      }
+    ]
   },
   data(){
     return {
@@ -117,6 +139,26 @@ export default {
     openLink(url) {
       window.open(url, '_blank');
     },
+    addStructuredData() {
+      const schema = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "IVIS LABS",
+        "description": "Leading provider of AI and Computer Vision solutions",
+        "url": "https://ivislabs.com",
+        "logo": "https://ivislabs.com/logo.png",
+        "sameAs": [
+          "https://www.linkedin.com/company/ivislabs",
+          "https://www.instagram.com/ivislabs"
+          // Add other social media links
+        ]
+      };
+
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.text = JSON.stringify(schema);
+      document.head.appendChild(script);
+    }
   },
   mounted() {
     const observerOptions = {
@@ -147,7 +189,8 @@ export default {
   height: calc(100vh - 80px);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: max(1500px, 100vw);
+  /* background-size: max(1500px, 100vw); */
+  background-size: cover;
   animation: transitionIn 0.75s;
 }
 

@@ -55,33 +55,56 @@
     <div class="tech-stack">
       <h1>Our Tech Stack</h1>
       <div class="ts-images">
-        <div><img src="../assets/android-logo-wordmark.png" alt="Android" width="150"></div>
-        <div><img src="../assets/flutter.png" alt="Flutter" width="150"></div>
-        <div><img src="../assets/React.png" alt="React" width="150"></div>
-        <div><img src="../assets/vuejs.png" alt="Vue.js" width="100"></div>
-        <div><img src="../assets/vanilla.png" alt="Vanilla JS" width="75"></div>
-        <div><img src="../assets/gql.png" alt="GraphQL" width="150"></div>
-        <div><img src="../assets/mongoDB.png" alt="MongoDB" width="150"></div>
-        <div><img src="../assets/mysql.svg" alt="MySQL" width="150"></div>
-        <div><img src="../assets/postgresql.png" alt="PostgreSQL" width="100"></div>
-        <div><img src="../assets/angularjs.png" alt="AngularJS" width="105"></div>
-        <div><img src="../assets/express.png" alt="Express" width="150"></div>
-        <div><img src="../assets/nodejs.png" alt="Node.js" width="150"></div>
-        <div><img src="../assets/python.png" alt="Python" width="150"></div>
-        <div><img src="../assets/tensorflow.png" alt="TensorFlow" width="150"></div>
-        <div><img src="../assets/Arduino.png" alt="Arduino" width="75"></div>
-        <div><img src="../assets/webduino.jpg" alt="Webduino" width="150"></div>
-        <div><img src="../assets/Bootstrap.png" alt="Bootstrap" width="75"></div>
-        <div><img src="../assets/tailwind.png" alt="Tailwind CSS" width="150"></div>
-        <div><img src="../assets/aws.png" alt="AWS" width="75"></div>
-        <div><img src="../assets/Linux.png" alt="Linux" width="150"></div>
+        <div><img src="../assets/android-logo-wordmark.png" alt="Android" width="150" loading="lazy"></div>
+        <div><img src="../assets/flutter.png" alt="Flutter" width="150" loading="lazy"></div>
+        <div><img src="../assets/React.png" alt="React" width="150" loading="lazy"></div>
+        <div><img src="../assets/vuejs.png" alt="Vue.js" width="100" loading="lazy"></div>
+        <div><img src="../assets/vanilla.png" alt="Vanilla JS" width="75" loading="lazy"></div>
+        <div><img src="../assets/gql.png" alt="GraphQL" width="150" loading="lazy"></div>
+        <div><img src="../assets/mongoDB.png" alt="MongoDB" width="150" loading="lazy"></div>
+        <div><img src="../assets/mysql.svg" alt="MySQL" width="150" loading="lazy"></div>
+        <div><img src="../assets/postgresql.png" alt="PostgreSQL" width="100" loading="lazy"></div>
+        <div><img src="../assets/angularjs.png" alt="AngularJS" width="105" loading="lazy"></div>
+        <div><img src="../assets/express.png" alt="Express" width="150" loading="lazy"></div>
+        <div><img src="../assets/nodejs.png" alt="Node.js" width="150" loading="lazy"></div>
+        <div><img src="../assets/python.png" alt="Python" width="150" loading="lazy"></div>
+        <div><img src="../assets/tensorflow.png" alt="TensorFlow" width="150" loading="lazy"></div>
+        <div><img src="../assets/Arduino.png" alt="Arduino" width="75" loading="lazy"></div>
+        <div><img src="../assets/webduino.jpg" alt="Webduino" width="150" loading="lazy"></div>
+        <div><img src="../assets/Bootstrap.png" alt="Bootstrap" width="75" loading="lazy"></div>
+        <div><img src="../assets/tailwind.png" alt="Tailwind CSS" width="150" loading="lazy"></div>
+        <div><img src="../assets/aws.png" alt="AWS" width="75" loading="lazy"></div>
+        <div><img src="../assets/Linux.png" alt="Linux" width="150" loading="lazy"></div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  metaInfo: {
+    title: 'AI Solutions - IVIS LABS',
+    meta: [
+      {
+        name: 'description',
+        content: 'Comprehensive AI solutions including Computer Vision, Healthcare Diagnostics, and AR/VR applications. Custom AI solutions for enterprise needs.'
+      },
+      {
+        name: 'keywords',
+        content: 'AI solutions, Computer Vision, Healthcare AI, AR/VR, Enterprise AI, Custom AI Solutions'
+      },
+      // Open Graph
+      {
+        property: 'og:title',
+        content: 'AI Solutions - IVIS LABS'
+      },
+      {
+        property: 'og:description',
+        content: 'Transform your business with our comprehensive AI solutions'
+      }
+    ]
+  }
+};
 </script>
 
 <style scoped>

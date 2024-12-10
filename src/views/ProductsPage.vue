@@ -21,10 +21,11 @@
           v-for="product in filteredProducts" 
           :key="product.id"
           class="product-card"
+          :id = "product.slug"
           :class="{ 'show': product.visible }"
         >
           <div class="product-icon">
-            <img :src="product.icon" :alt="product.name">
+            <img :src="product.icon" :alt="product.name" loading="lazy">
           </div>
           <h3>{{ product.name }}</h3>
           <p class="description">{{ product.description }}</p>
@@ -74,6 +75,32 @@
   <script>
   export default {
     name: 'ProductsPage',
+    metaInfo: {
+    title: 'IVIS LABS - AI & Computer Vision Solutions',
+    meta: [
+      { 
+        name: 'description', 
+        content: 'Leading AI solutions provider specializing in Computer Vision, AR/VR, Healthcare AI, and Enterprise Software Development. Transform your business with intelligent solutions.' 
+      },
+      { 
+        name: 'keywords', 
+        content: 'AI solutions, Computer Vision, Artificial Intelligence, AR/VR, Healthcare AI, Enterprise Software, Machine Learning' 
+      },
+      // Open Graph / Social Media
+      { 
+        property: 'og:title', 
+        content: 'IVIS LABS - Intelligent Vision Solutions' 
+      },
+      { 
+        property: 'og:description', 
+        content: 'Transform your business with cutting-edge AI and Computer Vision solutions' 
+      },
+      { 
+        property: 'og:image', 
+        content: '' // Replace with your actual logo URL
+      }
+    ]
+  },
     data() {
       return {
         selectedCategory: 'All',
@@ -83,8 +110,9 @@
           {
             id: 1,
             name: 'AI Based Attendance Management System',
-            description: 'Advanced computer vision solution for real-time object detection and analysis',
-            fullDescription: 'Comprehensive AI-powered computer vision system that enables real-time facial recognition for huge number of students .',
+            slug: 'attendance-management-system',
+            description: 'Enterprise-grade facial recognition system using Computer Vision for automated attendance tracking. Ideal for educational institutions and corporate environments.',
+            fullDescription: 'State-of-the-art attendance management solution powered by advanced facial recognition AI. Features real-time processing, multi-face detection, and seamless integration with existing systems. Perfect for schools, colleges, and corporate offices seeking automated attendance solutions.',
             category: 'AI Solutions',
             icon: require('@/assets/AMS.png'),
             features: ['Real-time Processing'],
@@ -98,8 +126,9 @@
           {
             id: 2,
             name: 'Annotation Assessment System',
-            description: 'Assess the quality of Work Done using an Intelligent System ',
-            fullDescription: "Streamline your annotation talent recruitment with our specialized assessment interface. Our platform evaluates candidates' annotation capabilities through real-world tasks, providing detailed insights into their accuracy, speed, and consistency. Make data-driven hiring decisions and build high-performing annotation teams while saving valuable time and resources in the recruitment process.",
+            slug:'annotation-assessment-system',
+            description: 'AI-powered platform for evaluating data annotation quality and talent assessment in machine learning projects.',
+            fullDescription: "Advanced annotation quality assessment platform designed for AI/ML teams. Our system evaluates annotation accuracy, consistency, and efficiency through intelligent metrics and real-world tasks. Perfect for companies building machine learning datasets and hiring annotation specialists.",
             category: 'AI Solutions',
             icon: require('@/assets/AMS.png'),
             features: ['Scalabe', 'Effiecient', 'Intuitive'],
@@ -111,12 +140,13 @@
           },
           {
             id: 3,
-            name: 'VIA',
-            description: 'Intelligent Medicene Reminder',
+            name: 'VIA - Intelligent Medicine Reminder',
+            description: 'Smart healthcare companion app with AI-powered medicine reminders',
+            slug:'via-medicene-reminder',
             fullDescription: 'An intelligent medicene reminder application ',
             category: 'Mobile',
             icon: require('@/assets/AMS.png'),
-            features: ['Lightweight', 'User-Friendly', 'Minimalistic'],
+            features: ['Lightweight', 'User-Friendly', 'Minimalistic', 'Real-time Alerts'],
             detailedFeatures: [
               'Seamless, Precise and Timely Medicene Reminders',
             ],

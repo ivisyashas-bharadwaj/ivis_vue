@@ -1,6 +1,6 @@
 <template>
     <div class="card" @mouseover="hover = true" @mouseleave="hover = false">
-      <img class="picture" :src="pictureSrc" alt="" v-if="!hover">
+      <img class="picture" :src="pictureSrc" alt="picture" v-if="!hover">
       <div class="name" v-if="!hover">{{ name }}</div>
   
       <div class="card__content" :class="{ 'hovered': hover }">
