@@ -20,12 +20,12 @@
       return {
         rewards: [
           {
-            image: require('/src/assets/Certificate.jpg'),
+            image: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Certificate.jpg",
             title: 'Recognition Award',
             description: 'Recognized as a startup by the Department of Promotion of Industry and Internal Trade, GOI',
           },
           {
-            image: require('/src/assets/image1.png'),
+            image: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/image1.png",
             title: 'Recognition Award',
             description: 'Well appreciated by Vidyavardhaka College of Engineering for our offerings on GenAI',
           },

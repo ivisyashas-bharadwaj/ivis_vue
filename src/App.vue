@@ -60,6 +60,7 @@ export default {
   --secondary-color:#282828;
   --bg1:#54d6d8;
   --card-bg : white;
+  --shadow : rgba(0,0,0,0.1);
 }
 
 .dark-theme {
@@ -68,7 +69,9 @@ export default {
   /* --primary-color:#3f474d; */
   --secondary-color:#f7fafc;
   --bg1:#1fbabc;
-  --card-bg : #5f7991;
+  /* --card-bg : #5f7991; */
+  --card-bg : #e3f2fd;
+  --shadow : rgba(255, 255, 255, 0.8);
 }
 
 .dark-theme img:not(.picture, .title, .content-body .image img){

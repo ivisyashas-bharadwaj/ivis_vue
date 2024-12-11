@@ -3,7 +3,7 @@
     <!-- Content Section -->
     <div class="content-body">
       <div class="image">
-        <img src="https://nettedimages.s3.ap-south-1.amazonaws.com/people-detection.gif" alt="Data Engineering Solutions">
+        <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/people-detection.gif" alt="Data Engineering Solutions">
       </div>
       <div class="content">
         <h1>Comprehensive Data Engineering Solutions for Real-Time Analytics</h1>
@@ -13,7 +13,7 @@
 
     <div class="content-body body-1">
       <div class="image">
-        <img src="../assets/facemesh.gif" alt="Virtual Try-On" height="350">
+        <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/facemesh.gif" alt="Virtual Try-On" height="350">
       </div>
       <div class="content">
         <h1>Augmented Reality: Virtual Try-On</h1>
@@ -23,7 +23,7 @@
 
     <div class="content-body b-2">
       <div class="image">
-        <img src="https://nettedimages.s3.ap-south-1.amazonaws.com/homeVideo.gif" alt="AI-Powered Chatbots">
+        <img src="../assets/voice.jpg" alt="AI-Powered Chatbots">
       </div>
       <div class="content">
         <h1>AI-Powered Voice-Enabled Chatbots for Businesses</h1>
@@ -33,7 +33,10 @@
 
     <div class="content-body body-1">
       <div class="image">
-        <img src="https://nettedimages.s3.ap-south-1.amazonaws.com/ivislabs-solutions/healthcare" alt="Healthcare Diagnostics" height="300">
+        <video autoplay loop muted playsinline width="400">
+          <source src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/cancer.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
       <div class="content">
         <h1>Healthcare Diagnostics: AI-Driven Imaging</h1>
@@ -43,7 +46,7 @@
 
     <div class="content-body b-2">
       <div class="image">
-        <img :src="require('/src/assets/AI Induced Rebranding.gif')"  alt="AI Induced Rebranding" height="300">
+        <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/AI+Induced+Rebranding.gif"  alt="AI Induced Rebranding" height="300">
       </div>
       <div class="content">
         <h1>AI Induced Rebranding</h1>
@@ -51,30 +54,40 @@
       </div>
     </div>
 
+    <div class="content-body body-1">
+      <div class="image">
+        <img src="../assets/facemesh.gif" alt="Virtual Try-On" height="350">
+      </div>
+      <div class="content">
+        <h1>Unlocking Efficiency Through Data Insights</h1>
+        <p>Data analytics is used to collect and analyze data from the manufacturing process. This data can be used to improve the process and identify areas for improvement.</p>
+      </div>
+    </div>
+
     <!-- Tech Stack Section -->
     <div class="tech-stack">
       <h1>Our Tech Stack</h1>
       <div class="ts-images">
-        <div><img src="../assets/android-logo-wordmark.png" alt="Android" width="150" loading="lazy"></div>
-        <div><img src="../assets/flutter.png" alt="Flutter" width="150" loading="lazy"></div>
-        <div><img src="../assets/React.png" alt="React" width="150" loading="lazy"></div>
-        <div><img src="../assets/vuejs.png" alt="Vue.js" width="100" loading="lazy"></div>
-        <div><img src="../assets/vanilla.png" alt="Vanilla JS" width="75" loading="lazy"></div>
-        <div><img src="../assets/gql.png" alt="GraphQL" width="150" loading="lazy"></div>
-        <div><img src="../assets/mongoDB.png" alt="MongoDB" width="150" loading="lazy"></div>
-        <div><img src="../assets/mysql.svg" alt="MySQL" width="150" loading="lazy"></div>
-        <div><img src="../assets/postgresql.png" alt="PostgreSQL" width="100" loading="lazy"></div>
-        <div><img src="../assets/angularjs.png" alt="AngularJS" width="105" loading="lazy"></div>
-        <div><img src="../assets/express.png" alt="Express" width="150" loading="lazy"></div>
-        <div><img src="../assets/nodejs.png" alt="Node.js" width="150" loading="lazy"></div>
-        <div><img src="../assets/python.png" alt="Python" width="150" loading="lazy"></div>
-        <div><img src="../assets/tensorflow.png" alt="TensorFlow" width="150" loading="lazy"></div>
-        <div><img src="../assets/Arduino.png" alt="Arduino" width="75" loading="lazy"></div>
-        <div><img src="../assets/webduino.jpg" alt="Webduino" width="150" loading="lazy"></div>
-        <div><img src="../assets/Bootstrap.png" alt="Bootstrap" width="75" loading="lazy"></div>
-        <div><img src="../assets/tailwind.png" alt="Tailwind CSS" width="150" loading="lazy"></div>
-        <div><img src="../assets/aws.png" alt="AWS" width="75" loading="lazy"></div>
-        <div><img src="../assets/Linux.png" alt="Linux" width="150" loading="lazy"></div>
+        <div><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/android-logo-wordmark.png" alt="Android" width="150" loading="lazy"></div>
+        <div><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/flutter.png" alt="Flutter" width="150" loading="lazy"></div>
+        <div><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/React.png" alt="React" width="150" loading="lazy"></div>
+        <div><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/vuejs.png" alt="Vue.js" width="100" loading="lazy"></div>
+        <div><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/vanilla.png" alt="Vanilla JS" width="75" loading="lazy"></div>
+        <div><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/gql.png" alt="GraphQL" width="150" loading="lazy"></div>
+        <div><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/mongoDB.png" alt="MongoDB" width="150" loading="lazy"></div>
+        <div><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/mysql.svg" alt="MySQL" width="150" loading="lazy"></div>
+        <div><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/postgresql.png" alt="PostgreSQL" width="100" loading="lazy"></div>
+        <div><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/angularjs.png" alt="AngularJS" width="105" loading="lazy"></div>
+        <div><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/express.png" alt="Express" width="150" loading="lazy"></div>
+        <div><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/nodejs.png" alt="Node.js" width="150" loading="lazy"></div>
+        <div><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/python.png" alt="Python" width="150" loading="lazy"></div>
+        <div><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/tensorflow.png" alt="TensorFlow" width="150" loading="lazy"></div>
+        <div><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Arduino.png" alt="Arduino" width="75" loading="lazy"></div>
+        <div><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/webduino.jpg" alt="Webduino" width="150" loading="lazy"></div>
+        <div><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Bootstrap.png" alt="Bootstrap" width="75" loading="lazy"></div>
+        <div><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/tailwind.png" alt="Tailwind CSS" width="150" loading="lazy"></div>
+        <div><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/aws.png" alt="AWS" width="75" loading="lazy"></div>
+        <div><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Linux.png" alt="Linux" width="150" loading="lazy"></div>
       </div>
     </div>
   </div>
@@ -169,7 +182,7 @@ export default {
   padding: 4rem 4rem 0 4rem;
 }
 
-.body-1 img {
+.body-1 img, .image video{
   border-radius: 20px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;

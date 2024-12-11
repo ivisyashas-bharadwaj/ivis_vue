@@ -19,7 +19,7 @@
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img class="title" :src="profilePic" alt="Profile Picture">
+                  <img class="title" src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/profile-pic.jpg" alt="Profile Picture">
                 </div>
                 <div class="flip-card-back">
                   <p style="font-weight: 900;"><strong>Founder & CEO</strong></p>
@@ -175,35 +175,35 @@
         linkedinUrl: "https://www.linkedin.com/in/vvenkataramana/",
         emailUrl: "mailto:vinay@ivislabs.com",
         clients: [
-          { src: require('../assets/aimlware.webp'), alt: "AI ML Ware" },
-          { src: require('../assets/kixr.png'), alt: "Kixr" },
-          { src: require('../assets/LGC.jpg'), alt: "LGC", height: "100" },
-          { src: require('../assets/iqnaax.png'), alt: "Iqnaax" },
-          { src: require('../assets/cumulations.webp'), alt: "Cumulations" },
-          { src: require('../assets/prudent.png'), alt: "Prudent" },
-          { src: require('../assets/totalGas.png'), alt: "Total Gas", height: "100" },
-          { src: require('../assets/infopinelogo.png'), alt: "infopine", height: "100", width:"150" },
-          { src: require('../assets/Atme.png'), alt: "Atme" },
-          { src: require('../assets/eshwarcollege.png'), alt: "Eshwar College" },
-          { src: require('../assets/vvce.png'), alt: "VVCE", height: "150" },
-          { src: require('../assets/Nie.png'), alt: "NIE", height: "150" },
-          { src: require('../assets/gsss.png'), alt: "GSSS" },
-          { src: require('../assets/cresta.png'), alt: "Cresta", height: "100" },
+        { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/aimlware.webp", alt: "AI ML Ware" },
+          { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/kixr.png", alt: "Kixr" },
+          { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/LGC.jpg", alt: "LGC", height: "100" },
+          { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/iqnaax.png", alt: "Iqnaax" },
+          { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/cumulations.webp", alt: "Cumulations" },
+          { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/prudent.png", alt: "Prudent" },
+          { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/totalGas.png", alt: "Total Gas", height: "100" },
+          { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/infopinelogo.png", alt: "Infopine", height: "100", width: "150" },
+          { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Atme.png", alt: "Atme" },
+          { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/eshwarcollege.png", alt: "Eshwar College" },
+          { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/vvce.png", alt: "VVCE", height: "150" },
+          { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Nie.png", alt: "NIE", height: "150" },
+          { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/gsss.png", alt: "GSSS" },
+          { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/cresta.png", alt: "Cresta", height: "100" },
           { src: ('https://www.reva.edu.in/smart-2023/assets/images/reva-logo.png'), alt: "Reva" },
         ],
         partners: [
-          { src: require('../assets/aws.png'), alt: "AWS", height: "100" },
-          { src: require('../assets/aimlware.webp'), alt: "AI ML Ware" },
-          { src: require('../assets/cumulations.webp'), alt: "Cumulations" },
-          { src: require('../assets/prudent.png'), alt: "Prudent" },
-          { src: require('../assets/zoho.png'), alt: "Zoho", height: "100" },
-          { src: require('../assets/OpenAI-Logo-PNG.png'), alt: "OpenAI" },
-          { src: require('../assets/microsoft.png'), alt: "Microsoft" },
-          { src: require('../assets/eres.webp'), alt: "ERES" },
-          { src: require('../assets/canva.jpeg'), alt: "Canva" },
-          { src: require('../assets/LGC.jpg'), alt: "LGC", height: "100" },
-          { src: require('../assets/iitm.png'), alt:"IIT Madras"},
-          { src: require('../assets/bits-pillani.webp'), alt:"BITS pilani"},
+        { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/aws.png", alt: "AWS", height: "100" },
+        { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/aimlware.webp", alt: "AI ML Ware" },
+        { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/cumulations.webp", alt: "Cumulations" },
+        { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/prudent.png", alt: "Prudent" },
+        { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/zoho.png", alt: "Zoho", height: "100" },
+        { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/OpenAI-Logo-PNG.png", alt: "OpenAI" },
+        { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/microsoft.png", alt: "Microsoft" },
+        { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/eres.webp", alt: "ERES" },
+        { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/canva.jpeg", alt: "Canva" },
+        { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/LGC.jpg", alt: "LGC", height: "100" },
+        { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/iitm.png", alt: "IIT Madras" },
+        { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/bits-pillani.webp", alt: "BITS Pilani" }
         ],
       };
     },

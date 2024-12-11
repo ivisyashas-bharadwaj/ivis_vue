@@ -20,8 +20,8 @@
     </div>
     <div class="roadmap">
       <h2>OUR FOOTSTEPS</h2>
-      <img src="../assets/Copy of Established in 2021.gif" alt="Roadmap" class="light-image" />
-      <img src="../assets/Copy of Established in 2021-dark.gif" alt="Roadmap" class="dark-image" />
+      <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Copy+of+Established+in+2021.gif" alt="Roadmap" class="light-image" />
+      <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Copy+of+Established+in+2021-dark.gif" alt="Roadmap" class="dark-image" />
     </div>
     <TestimonialSlider :testimonials="testimonialData" />
     <div class="m1-container">
@@ -33,7 +33,7 @@
 
       <div class="services">
         <div class="card card-1">
-          <img src="../assets/1.png" alt="arvr" width="100" height="100" />
+          <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/1.png" alt="arvr" width="100" height="100" />
           <p class="card__title title-front">Augmented Reality and Virtual Reality</p>
           <div class="card__content">
             <p class="card__title">Augmented Reality and Virtual Reality</p>
@@ -41,7 +41,7 @@
           </div>
         </div>
         <div class="card card-2">
-          <img src="../assets/2.png" alt="Web apps and mobile apps"/>
+          <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/2.png" alt="Web apps and mobile apps"/>
           <p class="card__title title-front">Web Application and Mobile Application Development</p>
           <div class="card__content">
             <p class="card__title">Web Application and Mobile Application Development</p>
@@ -49,7 +49,7 @@
           </div>
         </div>
         <div class="card card-3">
-          <img src="../assets/3.png" alt="Voice user interface"/>
+          <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/3.png" alt="Voice user interface"/>
           <p class="card__title title-front">Voice User Interface</p>
           <div class="card__content">
             <p class="card__title">Voice User Interface</p>
@@ -57,7 +57,7 @@
           </div>
         </div>
         <div class="card card-4">
-          <img src="../assets/4.png" alt="Corporate and Professional Training" />
+          <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/4.png" alt="Corporate and Professional Training" />
           <p class="card__title title-front">Corporate and Professional Training</p>
           <div class="card__content">
             <p class="card__title">Corporate and Professional Training</p>
@@ -65,7 +65,7 @@
           </div>
         </div>
         <div class="card card-5">
-          <img src="../assets/5.png" alt="Ai Integration" />
+          <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/5.png" alt="Ai Integration" />
           <p class="card__title title-front">AI Integration for fashion, infrastructure, health tech & EdTech Domains</p>
           <div class="card__content">
             <p class="card__title">AI Integration for fashion, infrastructure, health tech & EdTech Domains</p>
@@ -118,14 +118,14 @@ export default {
         },
         {
           id: 2,
-          image: require('/src/assets/avatar.svg'),
+          image: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/avatar.svg",
           text: "The training provided a comfortable and focused learning environment. The teaching approach simplified complex topics, making them easy to grasp and apply effectively.",
           name: 'Chandana C',
           job: 'Student'
         },
         {
           id: 3,
-          image: require('/src/assets/avatar.svg'),
+          image: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/avatar.svg ",
           text: "The training effectively introduced us to the fundamentals of Python, enabling us to solve problem statements with confidence. Overall, it significantly enhanced our skills and understanding of the subject.",
           name: 'Kalpana Lahari B',
           job: 'Student'
