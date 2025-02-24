@@ -39,7 +39,7 @@
       <ProfileCard 
         :pictureSrc="require('../assets/Basavaraj.png')" 
         name="Basavaraj" 
-        title="Internal Trainer" 
+        title="Technical Operations and Marketing Engineer" 
         linkedinUrl="https://www.linkedin.com/in/basavaraj-k-7323b92b2/"
       />
       <ProfileCard 
