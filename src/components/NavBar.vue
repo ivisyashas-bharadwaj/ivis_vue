@@ -128,12 +128,20 @@ export default {
     color: var(--secondary-color);
     }
 
-    .hover a:hover{
+    .hover{
+      padding: .2rem;
+    }
+
+    .hover:hover {
     background-color: #c9e6e5;
-    color: black;
-    padding: .4rem .8rem;
+    border-radius: 10px;
+    scale: 1.05;
     transition: .3s cubic-bezier(0, 0, 0.61, 0.83);
     cursor: pointer;
+    }
+
+    .mainbar a:hover , .sidebar a:hover {
+    color: var(--primary-color);
     }
 
     .button {
@@ -386,13 +394,13 @@ export default {
     }
     }
 
-    @media (max-width:800px) {
+    @media (max-width:820px) {
     .hide {
         display: none;
     }
     }
 
-    @media (min-width:801px) {
+    @media (min-width:821px) {
     .stopShowing {
         display: none;
     }

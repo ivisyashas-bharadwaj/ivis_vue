@@ -93,5 +93,7 @@ body {
   background-size: cover;
   background-position: right center;
   background-color: var(--primary-color);
+  /* max-width: 1920px; */
+  margin: 0 auto;
 }
 </style>

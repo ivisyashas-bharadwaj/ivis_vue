@@ -126,6 +126,15 @@
         </div>
       </div>
     </div>
+
+    <div class="ourClients-container">
+      <h1>MEET OUR Edu-CLIENTS</h1>
+      <div class="ourClients">
+        <div class="image" v-for="(edclient, index) in edclients" :key="index">
+          <img :src="edclient.src" :alt="edclient.alt" :height="edclient.height" :width="edclient.width">
+        </div>
+      </div>
+    </div>
   
     <div class="ourPartners-container">
       <h1>MEET OUR ASSOCIATIONS</h1>
@@ -145,7 +154,7 @@
   import RewardsRecognition from '@/components/RewardsRecognition.vue';
   export default {
     components: {
-      RewardsRecognition
+      RewardsRecognition,
     },
     metaInfo: {
     title: 'About IVIS LABS - Leading AI Innovation',
@@ -178,12 +187,13 @@
         { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/aimlware.webp", alt: "AI ML Ware" },
           { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/kixr.png", alt: "Kixr" },
           { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/LGC.jpg", alt: "LGC", height: "100" },
-          { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/iqnaax.png", alt: "Iqnaax" },
           { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/cumulations.webp", alt: "Cumulations" },
           { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/prudent.png", alt: "Prudent" },
           { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/totalGas.png", alt: "Total Gas", height: "100" },
           { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/infopinelogo.png", alt: "Infopine", height: "100", width: "150" },
-          { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Atme.png", alt: "Atme" },
+        ],
+        edclients:[
+        { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Atme.png", alt: "Atme" },
           { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/eshwarcollege.png", alt: "Eshwar College" },
           { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/vvce.png", alt: "VVCE", height: "150" },
           { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Nie.png", alt: "NIE", height: "150" },

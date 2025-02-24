@@ -6,13 +6,13 @@
         pictureSrc="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Uday+Bhandari.jpg" 
         name="Uday Bhandary" 
         title="Chief Digital Transformation Officer" 
-        email="udaybhandary@ivislabs.com"
+        linkedinUrl="https://www.linkedin.com/in/udaya-bhandary-93b2a454/"
       />
       <ProfileCard 
       class="card-2"
         pictureSrc="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Amarnath.jpg" 
         name="Amarnath R" 
-        title="Cheif Technological Officer" 
+        title="Chief Technology Officer" 
         linkedinUrl="https://www.linkedin.com/in/amarnathr/"
       />
       <ProfileCard 
@@ -37,31 +37,7 @@
         linkedinUrl="https://www.linkedin.com/in/rakshitha-y-s/"
       />
       <ProfileCard 
-        pictureSrc="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Prajwal.jpg" 
-        name="Prajwal Shawnak V" 
-        title="Data Analytics Engineer" 
-        linkedinUrl="https://www.linkedin.com/in/prajwal-shawnak-19bb51252/"
-      />
-      <ProfileCard 
-        :pictureSrc="require('../assets/avatar.svg')" 
-        name="Ranjan D N" 
-        title="Data Analytics Engineer" 
-        linkedinUrl="https://www.linkedin.com/in/ranjan-d-n-55a24b279/"
-      />
-      <ProfileCard 
-        pictureSrc="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Nisarga.jpg" 
-        name="Nisarga P" 
-        title="Data Analytics Engineer" 
-        linkedinUrl="https://www.linkedin.com/in/nisarga-p-9bb418298/"
-      />
-      <ProfileCard 
-        :pictureSrc="require('../assets/avatar.svg')" 
-        name="Pallavi" 
-        title="Data Analytics Engineer" 
-        linkedinUrl="https://www.linkedin.com/in/nisarga-p-9bb418298/"
-      />
-      <ProfileCard 
-        :pictureSrc="require('../assets/avatar.svg')" 
+        :pictureSrc="require('../assets/Basavaraj.png')" 
         name="Basavaraj" 
         title="Internal Trainer" 
         linkedinUrl="https://www.linkedin.com/in/basavaraj-k-7323b92b2/"
@@ -73,19 +49,42 @@
         linkedinUrl="https://www.linkedin.com/in/thejaswi-br-b45164296/"
       />
       <ProfileCard 
-        :pictureSrc="require('../assets/avatar.svg')" 
-        name="Vamshi S" 
-        title="Mobile Dev Intern" 
-        linkedinUrl="https://www.linkedin.com/in/vamshisathya/"
-      />
-      <ProfileCard 
         pictureSrc="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Prajwal+(1).png" 
         name="Prajwal S" 
         title="Data Analytics Intern" 
         linkedinUrl="https://www.linkedin.com/in/prajwal-s-684b912a4/"
       />
+      <ProfileCard 
+        pictureSrc="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Prajwal.jpg" 
+        name="Prajwal Shawnak V" 
+        title="Data Analytics Engineer" 
+        linkedinUrl="https://www.linkedin.com/in/prajwal-shawnak-19bb51252/"
+      />
+      <ProfileCard 
+        :pictureSrc="require('../assets/ranjan.png')" 
+        name="Ranjan D N" 
+        title="Data Analytics Engineer" 
+        linkedinUrl="https://www.linkedin.com/in/ranjan-d-n-55a24b279/"
+      />
+      <ProfileCard 
+        :pictureSrc="require('../assets/Nisarga.png')" 
+        name="Nisarga P" 
+        title="Data Analytics Engineer" 
+        linkedinUrl="https://www.linkedin.com/in/nisarga-p-9bb418298/"
+      />
+      <ProfileCard 
+        :pictureSrc="require('../assets/Pallavi.png')" 
+        name="Pallavi" 
+        title="Data Analytics Engineer" 
+        linkedinUrl="https://www.linkedin.com/in/nisarga-p-9bb418298/"
+      />
     </div>
-    <Carousel :images="Images" :interval="3000"/>
+    <!-- <Carousel :images="Images" :interval="3000"/> -->
+    <RollingGallery 
+      :autoplay="true" 
+      :pauseOnHover="true" 
+      :images="Images" 
+    />
   </template>
   
   <script>
@@ -139,7 +138,7 @@
       }
     }
 
-    @media (max-width:620px) {
+    @media (max-width:720px) {
       .grid-2{
         grid-template-columns: repeat(1,1fr)
       }

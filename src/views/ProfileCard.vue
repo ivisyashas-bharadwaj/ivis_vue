@@ -47,7 +47,7 @@
     .card {
       position: relative;
       width: 250px;
-      height: 300px;
+      height: 250px;
       /* background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%); */
       border-radius: 10px;
       overflow: hidden;
