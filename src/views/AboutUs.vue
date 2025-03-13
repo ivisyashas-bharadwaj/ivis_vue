@@ -122,7 +122,7 @@
       <h1>MEET OUR CLIENTS</h1>
       <div class="ourClients">
         <div class="image" v-for="(client, index) in clients" :key="index">
-          <img :src="client.src" :alt="client.alt" :height="client.height" :width="client.width">
+          <img :src="client.src" :alt="client.alt" :height="client.height" :width="client.width" :class="{'special-image': client.alt === 'Vinva'}">
         </div>
       </div>
     </div>
@@ -191,15 +191,21 @@
           { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/prudent.png", alt: "Prudent" },
           { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/totalGas.png", alt: "Total Gas", height: "100" },
           { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/infopinelogo.png", alt: "Infopine", height: "100", width: "150" },
+          { src: "https://sencilla.in/wp-content/uploads/2022/04/sencilla-logo2.png", alt: "sencilla", height: "100", width: "150" },
+          { src: "https://sggpl.com/wp-content/uploads/2024/01/SGG-NEWEST-LOGO-shadow.png", alt: "SGG", height: "75", width: "150" },
+          { src: "https://vinvatech.com/wp-content/uploads/2024/07/cropped-vinva-2.png", alt: "Vinva", height: "75", width: "150" },
         ],
         edclients:[
         { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Atme.png", alt: "Atme" },
           { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/eshwarcollege.png", alt: "Eshwar College" },
           { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/vvce.png", alt: "VVCE", height: "150" },
-          { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Nie.png", alt: "NIE", height: "150" },
+          { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Nie.png", alt: "NIE", height: "125" },
           { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/gsss.png", alt: "GSSS" },
           { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/cresta.png", alt: "Cresta", height: "100" },
-          { src: ('https://www.reva.edu.in/smart-2023/assets/images/reva-logo.png'), alt: "Reva" },
+          { src: require("../assets/jss.png"), alt: "JSS", height: "125"  },
+          { src: require("../assets/sapient.png"), alt: "Sapient", height:"150"},
+          { src: require("../assets/shantala.png"), alt: "Shantala", height:"125" },
+          { src: require("../assets/hindustan.png"), alt: "Hindustan" },
         ],
         partners: [
         { src: "https://ivislabsdocs.s3.ap-south-1.amazonaws.com/aws.png", alt: "AWS", height: "100" },
@@ -461,6 +467,13 @@
   text-align: center;
   color: var(--secondary-color);
   animation: h1Ani 3s forwards infinite ease-in;
+}
+
+.special-image {
+  background-color: blue; /* Change this to your desired color */
+  padding: 5px; /* Optional: Add some padding */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  display: inline-block; /* Ensures the background color wraps around the image */
 }
 
 @keyframes h1Ani {

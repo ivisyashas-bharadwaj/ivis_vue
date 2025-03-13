@@ -33,7 +33,7 @@
 
     <div class="content-body body-1">
       <div class="image">
-        <video autoplay loop muted playsinline width="400">
+        <video autoplay loop muted playsinline >
           <source src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/cancer.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
@@ -188,6 +188,10 @@ export default {
   border-bottom-left-radius: 0;
 }
 
+.image video{
+  width: 400px;
+}
+
 .tech-stack {
   padding: 1.5rem;
   animation: transitionIn 0.75s 1s;
@@ -254,6 +258,10 @@ export default {
 
 .footer {
   grid-template-columns: 1fr;
+}
+
+.image video{
+  width: 300px;
 }
 
 .footer-item{

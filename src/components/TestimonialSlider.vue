@@ -167,6 +167,12 @@
   :deep(.swiper-pagination-bullet-active) {
     background-color: #4070f4;
   }
+
+  @media (max-width: 500px) {
+    h1{
+      font-size: 1.5rem;
+    }
+  }
   
   @media screen and (max-width: 768px) {
     .slide p {

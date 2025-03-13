@@ -141,7 +141,7 @@ export default {
     }
 
     .mainbar a:hover , .sidebar a:hover {
-    color: var(--primary-color);
+    color: black;
     }
 
     .button {
