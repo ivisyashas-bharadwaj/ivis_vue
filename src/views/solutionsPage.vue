@@ -1,7 +1,8 @@
 <template>
+  <center class="mt-100"><h1>Our Solutions</h1></center>
   <div class="body">
     <!-- Content Section -->
-    <div class="content-body">
+    <div class="content-body p-10">
       <div class="image">
         <img src="https://nettedimages.s3.ap-south-1.amazonaws.com/people-detection.gif" alt="Data Engineering Solutions">
       </div>

@@ -12,7 +12,7 @@
       class="card-2"
         :pictureSrc="require('../assets/Amarnath.jpg')" 
         name="Amarnath R" 
-        title="Cheif Technological Officer" 
+        title="Chief Technology Officer" 
         linkedinUrl="https://www.linkedin.com/in/amarnathr/"
       />
       <ProfileCard 
