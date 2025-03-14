@@ -106,7 +106,7 @@
 }
 
 .footer {
-    padding: 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem;
   display: grid;
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
