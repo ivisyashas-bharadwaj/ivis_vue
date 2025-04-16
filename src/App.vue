@@ -2,6 +2,7 @@
   <LoadingScreen :isLoading="isLoading" />
   <Navbar v-show="!isLoading"/>
   <router-view v-show="!isLoading"/>
+  <Toast v-show="!isLoading" />
   <WhatsApp v-show="!isLoading"/>
   <AiToast v-if="!isLoading"/>
   <Footer v-show="!isLoading"/>
@@ -13,6 +14,7 @@ import Footer from './components/FooTer.vue'
 import WhatsApp from './components/WhatsApp.vue'
 import LoadingScreen from './components/LoadingScreen.vue'
 import AiToast from './components/AiToast.vue'
+import Toast from './components/Toast.vue'
 
 export default {
   name: 'App',
@@ -21,7 +23,8 @@ export default {
     Footer,
     WhatsApp,
     LoadingScreen,
-    AiToast
+    AiToast,
+    Toast
   },
   data() {
     return {
