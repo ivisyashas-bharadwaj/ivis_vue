@@ -5,6 +5,8 @@ import AboutUs from "@/views/AboutUs.vue";
 import { createRouter, createWebHistory } from 'vue-router';
 import NotFound from "@/components/NotFound.vue";
 import ProductsPage from "@/views/ProductsPage.vue";
+import AiChatPage from "@/views/AiChatPage.vue";
+import pdfViewer from "@/components/pdfViewer.vue";
 
 
 const routes = [
@@ -32,6 +34,16 @@ const routes = [
     path : '/products',
     name: 'products',
     component : ProductsPage
+  },
+  {
+    path:'/ai-chat',
+    name:'AiChat',
+    component: AiChatPage
+  },
+  {
+    path:'/policies',
+    name:'pdfViewer',
+    component: pdfViewer
   },
   {
     path:'/:catchAll(.*)',

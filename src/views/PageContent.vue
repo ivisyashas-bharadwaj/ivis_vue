@@ -20,8 +20,8 @@
     </div>
     <div class="roadmap">
       <h2>OUR FOOTSTEPS</h2>
-      <img src="../assets/Copy of Established in 2021.gif" alt="Roadmap" class="light-image" />
-      <img src="../assets/Copy of Established in 2021-dark.gif" alt="Roadmap" class="dark-image" />
+      <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Copy+of+Established+in+2021.gif" alt="Roadmap" class="light-image" />
+      <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Copy+of+Established+in+2021-dark.gif" alt="Roadmap" class="dark-image" />
     </div>
     <TestimonialSlider :testimonials="testimonialData" />
     <div class="m1-container">
@@ -33,7 +33,7 @@
 
       <div class="services">
         <div class="card card-1">
-          <img src="../assets/1.png" alt="arvr" width="100" height="100" />
+          <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/1.png" alt="arvr" width="100" height="100" />
           <p class="card__title title-front">Augmented Reality and Virtual Reality</p>
           <div class="card__content">
             <p class="card__title">Augmented Reality and Virtual Reality</p>
@@ -41,7 +41,7 @@
           </div>
         </div>
         <div class="card card-2">
-          <img src="../assets/2.png" alt="Web apps and mobile apps"/>
+          <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/2.png" alt="Web apps and mobile apps"/>
           <p class="card__title title-front">Web Application and Mobile Application Development</p>
           <div class="card__content">
             <p class="card__title">Web Application and Mobile Application Development</p>
@@ -49,7 +49,7 @@
           </div>
         </div>
         <div class="card card-3">
-          <img src="../assets/3.png" alt="Voice user interface"/>
+          <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/3.png" alt="Voice user interface"/>
           <p class="card__title title-front">Voice User Interface</p>
           <div class="card__content">
             <p class="card__title">Voice User Interface</p>
@@ -57,7 +57,7 @@
           </div>
         </div>
         <div class="card card-4">
-          <img src="../assets/4.png" alt="Corporate and Professional Training" />
+          <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/4.png" alt="Corporate and Professional Training" />
           <p class="card__title title-front">Corporate and Professional Training</p>
           <div class="card__content">
             <p class="card__title">Corporate and Professional Training</p>
@@ -65,7 +65,7 @@
           </div>
         </div>
         <div class="card card-5">
-          <img src="../assets/5.png" alt="Ai Integration" />
+          <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/5.png" alt="Ai Integration" />
           <p class="card__title title-front">AI Integration for fashion, infrastructure, health tech & EdTech Domains</p>
           <div class="card__content">
             <p class="card__title">AI Integration for fashion, infrastructure, health tech & EdTech Domains</p>
@@ -111,26 +111,33 @@ export default {
       testimonialData: [
         {
           id: 1,
-          image: "https://media.licdn.com/dms/image/v2/D5603AQHukFnLLtSKGA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1713717691301?e=1739404800&v=beta&t=LQmmy8ZOTP5y61S7RUPXDlxe7wpXyyNMK_W9OPI7YCc",
+          image: require("../assets/testimonials/Karthik.jpeg"),
           text: "Meeting Vinay Kumar Venkataramana was a turning point for me. His remarkable expertise in AI and dedication to the field are truly inspiring. I've seen his company, IVIS LABS PRIVATE LIMITED, achieve phenomenal growth, becoming a leader in AI implementation, development, and support. Thank you, Vinay, for your guidance and support in driving Prudent Partners LLP!",
           name: 'Karthik Bharadwaj',
           job: 'CEO, Prudent Partners'
         },
         {
           id: 2,
-          image: require('/src/assets/avatar.svg'),
-          text: "The training provided a comfortable and focused learning environment. The teaching approach simplified complex topics, making them easy to grasp and apply effectively.",
-          name: 'Chandana C',
-          job: 'Student'
+          image: require("../assets/testimonials/Sagar.jpeg"),
+          text: "IVIS, Dr Vinay,  is highly skilled in his job.  He is learned and that shows his ability in projects.What's good working with Dr Vinay?, He LISTENS. That's the most important aspect. A true team player he is and they are quick. A young talented energetic enthusiastic team they are. Organized, disciplined and humble. I can vouch that you won't go wrong by going with IVIS Dr Vinay",
+          name: 'Sagar Moudgal',
+          job: 'Founder - Poten2[SET] HR Consulting'
         },
         {
           id: 3,
-          image: require('/src/assets/avatar.svg'),
-          text: "The training effectively introduced us to the fundamentals of Python, enabling us to solve problem statements with confidence. Overall, it significantly enhanced our skills and understanding of the subject.",
-          name: 'Kalpana Lahari B',
-          job: 'Student'
+          image: require("../assets/testimonials/Madhu.jpeg"),
+          text: "We had a great experience working with IVIS Labs on our web application. Their technical know-how, responsiveness, and commitment ensured a smooth development process and a high-quality end product.",
+          name: 'Madhu V Swamy',
+          job: 'Co Founder and Director, Cumulations Technologies'
         },
-        // Add more testimonials as needed
+        {
+          id: 4,
+          image: require("../assets/testimonials/Harsha.jpeg"),
+          text: "Vinay and IVIS Labs provide exceptional training services in all modern technologies, with a personalized approach that ensures real learning. Their expertise make complex topics accessible, fostering both skill development and innovation. We highly recommend them to anyone looking to advance in these cutting-edge fields.",
+          name: 'Harsha Srinivas',
+          job: 'Director, AIMLWare'
+        },
+        
       ]
     }
   },
@@ -497,13 +504,19 @@ body.dark-theme .roadmap .dark-image{
   color: white;
 }
 
+.card__button:hover{
+  background-color: #413e3e;
+  scale: 1.05;
+  transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
 .secondary {
   background: transparent;
   color: #777;
   border: 1px solid #777;
 }
 
-@media (max-width:860px) {
+@media (max-width:1110px) {
   .footer {
     grid-template-columns: repeat(2, 1fr);
     padding: 1rem;
@@ -529,6 +542,10 @@ body.dark-theme .roadmap .dark-image{
 @media (max-width:725px) {
   .head {
     letter-spacing: 0;
+  }
+
+  .card{
+    margin: 0.5rem;
   }
 
   .footer-item{

@@ -2,7 +2,7 @@
     <footer>
       <div class="footer">
         <div class="footer-logo logo footer-item">
-          <img src="../assets/logo_transparent_small.png" alt="IVIS LOGO">
+          <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/logo_transparent_small.png" alt="IVIS LOGO">
           <h2>Intelligent Vision Labs</h2>
         </div>
         <div class="navigation footer-item">
@@ -16,11 +16,11 @@
         </div>
         <div class="contact-div footer-item">
         <div class="contacts">
-          <div class="ph-image"><img src="../assets/phone.svg" alt="Phone Img" width="20"></div>
+          <div class="ph-image"><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/phone.svg" alt="Phone Img" width="20"></div>
           <div class="num"><a href="tel:+919449963312">+91 9449963312</a></div>
         </div>
         <div class="location footer-item">
-          <div class="loc-image"><img src="../assets/location.svg" alt="location img" width="20"></div>
+          <div class="loc-image"><img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/location.svg" alt="location img" width="20"></div>
           <div class="location-text"><a href="https://www.google.com/maps/place/IVIS+LABS+Pvt+Ltd/@12.318221,76.6225487,17z/data=!3m1!4b1!4m6!3m5!1s0x3baf7b8e751cfd97:0x4ceec21d710bb532!8m2!3d12.318221!4d76.6251236!16s%2Fg%2F11qz4v2ys1?entry=ttu&g_ep=EgoyMDI0MTEwNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">113/A, 1st floor, 7th cross, Temple road, Jayalakshmipuram, Mysuru -570012</a></div>
         </div>
       </div>
@@ -106,7 +106,7 @@
 }
 
 .footer {
-    padding: 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem;
   display: grid;
   align-items: center;
   grid-template-columns: repeat(4, 1fr);

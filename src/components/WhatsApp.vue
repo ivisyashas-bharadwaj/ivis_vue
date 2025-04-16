@@ -1,12 +1,12 @@
 <template>
     <div>
       <div class="whatsapp-button" @click="toggleChat">
-        <img src="@/assets/whatsapp.svg" alt="whatsapp" />
+        <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/whatsapp.svg" alt="whatsapp" loading="lazy"/>
       </div>
   
       <div v-show="isChatVisible" class="chat-container">
         <div class="chat-header">
-          <img src="@/assets/ivisdp.png" alt="Profile Picture" class="profile-picture" />
+          <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/ivisdp.png" alt="Profile Picture" class="profile-picture" loading="lazy"/>
           <div class="chat-info">
             <span class="chat-name">IVIS LABS</span>
             <span class="chat-status">Online</span>

@@ -25,7 +25,7 @@
           :class="{ 'show': product.visible }"
         >
           <div class="product-icon">
-            <img :src="product.icon" :alt="product.name" loading="lazy">
+            <!-- <img :src="product.icon" :alt="product.name" loading="lazy"> -->
           </div>
           <h3>{{ product.name }}</h3>
           <p class="description">{{ product.description }}</p>
@@ -39,11 +39,11 @@
             <h3 style="text-align: center;">Request Demo on:</h3>
             <div class="contact-buttons">
               <button class="gmail-btn" @click="requestDemo(product)">
-                <img src="@/assets/mail.svg" alt="Gmail" />
+                <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/mail.svg" alt="Gmail" />
                 Mail
               </button>
               <button class="whatsapp-btn" @click="contactWhatsapp(product)">
-                <img src="@/assets/whatsapp.svg" alt="WhatsApp" />
+                <img src="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/whatsapp.svg" alt="WhatsApp" />
                 WhatsApp
               </button>
             </div>
@@ -55,7 +55,7 @@
         <div class="modal-content">
           <span class="close" @click="closeModal">&times;</span>
           <div class="modal-header">
-            <img :src="selectedProduct.icon" :alt="selectedProduct.name">
+            <!-- <img :src="selectedProduct.icon" :alt="selectedProduct.name"> -->
             <h2>{{ selectedProduct.name }}</h2>
           </div>
           <div class="modal-body">
@@ -105,7 +105,7 @@
       return {
         selectedCategory: 'All',
         selectedProduct: null,
-        categories: ['All', 'AI Solutions', 'Mobile', 'Cloud'],
+        categories: ['All', 'AI Solutions', 'Mobile'],
         products: [
           {
             id: 1,
@@ -127,10 +127,10 @@
             id: 2,
             name: 'Annotation Assessment System',
             slug:'annotation-assessment-system',
-            description: 'AI-powered platform for evaluating data annotation quality and talent assessment in machine learning projects.',
+            description: 'AI-powered platform for evaluating data annotation quality, talent assessment, optimizing workflows, ensuring dataset integrity, and enhancing efficiency in machine learning projects.',
             fullDescription: "Advanced annotation quality assessment platform designed for AI/ML teams. Our system evaluates annotation accuracy, consistency, and efficiency through intelligent metrics and real-world tasks. Perfect for companies building machine learning datasets and hiring annotation specialists.",
             category: 'AI Solutions',
-            icon: require('@/assets/AMS.png'),
+            // icon: require('../assets/AMS.png'),
             features: ['Scalabe', 'Effiecient', 'Intuitive'],
             detailedFeatures: [
               'Precise annotation Assessment',
@@ -140,12 +140,26 @@
           },
           {
             id: 3,
+            name: 'Prati',
+            slug:'prati',
+            description: "A scalable framework combining AI-powered document processing Structured data verification protocols Phased migration approach Custom integration pipelines",
+            fullDescription: "A hybrid approach making ERP adoption feasible for traditional businesses by removing the primary barrier - historical data migration. This opens up a vast hashtag#market segment that has traditionally been resistant to digital transformation.",
+            category: 'AI Solutions',
+            // icon: require('@/assets/AMS.png'),
+            features: [],
+            detailedFeatures: [
+              
+            ],
+            visible: true
+          },
+          {
+            id: 4,
             name: 'VIA - Intelligent Medicine Reminder',
             description: 'Smart healthcare companion app with AI-powered medicine reminders',
             slug:'via-medicene-reminder',
             fullDescription: 'An intelligent medicene reminder application ',
             category: 'Mobile',
-            icon: require('@/assets/AMS.png'),
+            // icon: require('@/assets/AMS.png'),
             features: ['Lightweight', 'User-Friendly', 'Minimalistic', 'Real-time Alerts'],
             detailedFeatures: [
               'Seamless, Precise and Timely Medicene Reminders',
@@ -153,6 +167,20 @@
             visible: true
           },
           // Add more products here
+          {
+            id: 5,
+            name: 'SERENO',
+            description: 'Internal Communicator for Corporates',
+            slug:'Internal Communicator for Corporates',
+            fullDescription: 'Sereno is your one-stop solution for communications in your organization. Team Chat, Indiviual Chat, Announcements, Polls, Tickets, Moments',
+            category: 'Mobile',
+            // icon: require('@/assets/AMS.png'),
+            features: ['Lightweight', 'User-Friendly', 'Minimalistic', 'Real-time Alerts'],
+            detailedFeatures: [
+              'Seamless, Precise and Timely Internal Communicator',
+            ],
+            visible: true
+          },
         ]
       }
     },
@@ -174,7 +202,7 @@
         this.selectedProduct = null
       },
       requestDemo(product) {
-        const email = 'info@ivislabs.com';
+        const email = 'contact@ivislabs.com';
         const subject = `Demo Request: ${product.name}`;
         const body = `
             Hi IVIS Labs team,
@@ -205,6 +233,10 @@
     padding: 2rem;
     background: var(--primary-color);
     min-height: 100vh;
+  }
+
+  h3{
+    text-align: center
   }
   
   .hero {
@@ -247,14 +279,14 @@
   }
   
   .filter-btn.active {
-    background: #1a237e;
+    background: var(--bg1);
     color: white;
     transform: scale(1.05);
   }
   
   .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     padding: 1rem;
   }
@@ -271,7 +303,7 @@
   
   .product-card:hover {
     transform: translateY(-50px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px var(--shadow);
   }
   
   .product-icon {
@@ -294,11 +326,12 @@
   }
   
   .feature-tag {
-    background: #e3f2fd;
+    background: #5f7991;
     color: #1565c0;
     padding: 0.4rem 0.8rem;
     border-radius: 15px;
     font-size: 0.9rem;
+    color: white;
   }
   
   .card-footer {
@@ -327,8 +360,8 @@
   }
   
   .learn-more {
-    background: #e3f2fd;
-    color: #1565c0;
+    background: #5f7991;
+    color: #ffffff;
   }
   
   .gmail-btn, .whatsapp-btn {

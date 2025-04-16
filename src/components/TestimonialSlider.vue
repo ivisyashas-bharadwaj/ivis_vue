@@ -55,7 +55,7 @@
         grabCursor: true,
         loop: true,
         autoplay: {
-          delay: 3000,
+          delay: 6000,
           disableOnInteraction: false,
         },
         pagination: {
@@ -166,6 +166,12 @@
   
   :deep(.swiper-pagination-bullet-active) {
     background-color: #4070f4;
+  }
+
+  @media (max-width: 500px) {
+    h1{
+      font-size: 1.5rem;
+    }
   }
   
   @media screen and (max-width: 768px) {

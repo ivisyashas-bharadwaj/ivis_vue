@@ -3,6 +3,7 @@
   <Navbar v-show="!isLoading"/>
   <router-view v-show="!isLoading"/>
   <WhatsApp v-show="!isLoading"/>
+  <AiToast v-if="!isLoading"/>
   <Footer v-show="!isLoading"/>
 </template>
 
@@ -11,6 +12,7 @@ import Navbar from './components/NavBar.vue'
 import Footer from './components/FooTer.vue'
 import WhatsApp from './components/WhatsApp.vue'
 import LoadingScreen from './components/LoadingScreen.vue'
+import AiToast from './components/AiToast.vue'
 
 export default {
   name: 'App',
@@ -18,7 +20,8 @@ export default {
     Navbar,
     Footer,
     WhatsApp,
-    LoadingScreen
+    LoadingScreen,
+    AiToast
   },
   data() {
     return {
@@ -60,6 +63,17 @@ export default {
   --secondary-color:#282828;
   --bg1:#54d6d8;
   --card-bg : white;
+  --shadow : rgba(0,0,0,0.1);
+  --chat-bg: #ffffff;
+  --chat-message-bg: #f0f0f0;
+  --chat-text: #1a1a1a;
+  --chat-user-message-bg: #0066cc;
+  --chat-user-text: #ffffff;
+  --chat-input-bg: #f8f9fa;
+  --chat-border: rgba(0, 0, 0, 0.06);
+  --chat-shadow: rgba(0, 0, 0, 0.05);
+  --chat-timestamp: #666;
+  --chat-typing-dot: #a0a0a0;
 }
 
 .dark-theme {
@@ -68,7 +82,19 @@ export default {
   /* --primary-color:#3f474d; */
   --secondary-color:#f7fafc;
   --bg1:#1fbabc;
-  --card-bg : #5f7991;
+  /* --card-bg : #5f7991; */
+  --card-bg : #e3f2fd;
+  --shadow : rgba(255, 255, 255, 0.8);
+  --chat-bg: #1e2a3a;
+  --chat-message-bg: #2d3748;
+  --chat-text: #e2e8f0;
+  --chat-user-message-bg: #15b7b9;
+  --chat-user-text: #ffffff;
+  --chat-input-bg: #2d3748;
+  --chat-border: rgba(255, 255, 255, 0.1);
+  --chat-shadow: rgba(0, 0, 0, 0.2);
+  --chat-timestamp: #a0aec0;
+  --chat-typing-dot: #718096;
 }
 
 .dark-theme img:not(.picture, .title, .content-body .image img){
@@ -90,5 +116,7 @@ body {
   background-size: cover;
   background-position: right center;
   background-color: var(--primary-color);
+  /* max-width: 1920px; */
+  margin: 0 auto;
 }
 </style>
