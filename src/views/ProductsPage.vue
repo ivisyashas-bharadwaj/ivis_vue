@@ -189,20 +189,6 @@
             downloadUrl:'https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Sereno_setup.exe'
           },
           // Add more products here
-          {
-            id: 5,
-            name: 'SERENO',
-            description: 'Internal Communicator for Corporates',
-            slug:'Internal Communicator for Corporates',
-            fullDescription: 'Sereno is your one-stop solution for communications in your organization. Team Chat, Indiviual Chat, Announcements, Polls, Tickets, Moments',
-            category: 'Mobile',
-            // icon: require('@/assets/AMS.png'),
-            features: ['Lightweight', 'User-Friendly', 'Minimalistic', 'Real-time Alerts'],
-            detailedFeatures: [
-              'Seamless, Precise and Timely Internal Communicator',
-            ],
-            visible: true
-          },
         ]
       }
     },
