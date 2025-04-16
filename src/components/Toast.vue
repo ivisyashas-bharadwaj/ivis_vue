@@ -1,5 +1,10 @@
 <template>
     <div class="toast-container">
+      <div class="firework-wrapper">
+            <div class="firework"></div>
+            <div class="firework"></div>
+            <div class="firework"></div>
+          </div>
       <div 
         class="toast" 
         :class="{ 'expanded': isExpanded }" 
@@ -8,7 +13,7 @@
       >
         <div class="toast-tip">
           <span class="tip-text"> <span class="sereno">SERENO</span> is out now</span>
-          <div @click="handleDownload">
+          <div @click="handleDownload" style="position: fixed; right: 10px;">
                 <a><svg
         viewBox="0 0 256 256"
         height="22"
@@ -21,9 +26,9 @@
         ></path></svg></a>
           </div>
         </div>
+        <!-- <div class="firework"></div>
         <div class="firework"></div>
-        <div class="firework"></div>
-        <div class="firework"></div>
+        <div class="firework"></div> -->
       </div>
     </div>
   </template>
@@ -38,7 +43,7 @@
   
       const handleDownload = () => {
         console.log('Downloading Sereno...')
-        window.location.href = 'https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Sereno_setup.exe'
+        window.location.href = '/products'
       }  
       return {
         isExpanded,
@@ -54,7 +59,7 @@
   .toast-container {
     position: fixed;
     top: 200px;
-    right: 25px;
+    right: 175px;
     z-index: 1000;
   }
   
@@ -70,9 +75,9 @@
     border-radius: 20px 20px 20px 20px;
   }
   
-  .toast.expanded {
+  /* .toast.expanded {
     transform: translateX(25px);
-  }
+  } */
   
   .toast-tip {
     background: 
@@ -83,6 +88,8 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 1;
   }
   
   .tip-text {
@@ -283,6 +290,41 @@ a:active {
   top: 60%;
   animation-delay: -0.4s;
 }
+.firework-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
 
+@keyframes glowText {
+  0% { text-shadow: 0 0 5px #25f9fc, 0 0 10px #25f9fc; }
+  50% { text-shadow: 0 0 20px #25f9fc, 0 0 30px #25f9fc; }
+  100% { text-shadow: 0 0 5px #25f9fc, 0 0 10px #25f9fc; }
+}
+
+@keyframes typing {
+  0% { width: 0 }
+  50% { width: 85% }
+  100% {width: 0}
+}
+
+.tip-text {
+  font-weight: bold;
+  white-space: nowrap;
+  font-family: "Expletus Sans", sans-serif;
+  animation: glowText 2s infinite ease-in-out ;
+  overflow: hidden;
+  border-right: 2px solid rgba(255,255,255,0.5);
+  width: fit-content;
+  max-width: 100%;
+  animation: 
+    glowText 2s infinite ease-in-out,
+    typing 8s infinite steps(40);
+}
   
   </style>

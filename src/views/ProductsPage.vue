@@ -36,6 +36,13 @@
           </div>
           <div class="card-footer">
             <button class="learn-more" @click="showDetails(product)">Learn More</button>
+            <button 
+            v-if="product.downloadUrl" 
+            class="download-btn" 
+            @click="downloadProduct(product)"
+          >
+             Download <img src="../assets/download.svg" width="20" height="20" alt="">
+          </button>
             <h3 style="text-align: center;">Request Demo on:</h3>
             <div class="contact-buttons">
               <button class="gmail-btn" @click="requestDemo(product)">
@@ -166,6 +173,21 @@
             ],
             visible: true
           },
+          {
+            id: 5,
+            name: 'Sereno - Your one step solution for business communications',
+            description: 'Sereno a light-weight secure business chat application',
+            slug:'sereno',
+            fullDescription: 'Sereno is a powerful communication platform that seamlessly integrates with your existing systems. It offers a range of features, including real-time chat, file sharing, and video conferencing.',
+            category: 'Mobile',
+            // icon: require('@/assets/AMS.png'),
+            features: ['Lightweight', 'User-Friendly', 'Minimalistic', 'Real-time Alerts'],
+            detailedFeatures: [
+              'Seamless, Precise ',
+            ],
+            visible: true,
+            downloadUrl:'https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Sereno_setup.exe'
+          },
           // Add more products here
           {
             id: 5,
@@ -201,6 +223,17 @@
       closeModal() {
         this.selectedProduct = null
       },
+      downloadProduct(product) {
+        if (product.downloadUrl) {
+          const downloadLink = document.createElement('a');
+          downloadLink.href = product.downloadUrl;
+          downloadLink.setAttribute('download', ''); 
+          downloadLink.setAttribute('target', '_self'); 
+          document.body.appendChild(downloadLink);
+          downloadLink.click();
+          document.body.removeChild(downloadLink);
+        }
+      },
       requestDemo(product) {
         const email = 'contact@ivislabs.com';
         const subject = `Demo Request: ${product.name}`;
@@ -233,6 +266,64 @@
     padding: 2rem;
     background: var(--primary-color);
     min-height: 100vh;
+  }
+
+  .download-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(58, 123, 213, 0.3);
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+  }
+
+  .download-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: 0.6s;
+  }
+
+  .download-btn:hover {
+    background: linear-gradient(135deg, #2a5298, #00b3db);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(58, 123, 213, 0.4);
+  }
+
+  .download-btn:hover::before {
+    left: 100%;
+  }
+
+  .download-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(58, 123, 213, 0.3);
+  }
+
+  .download-btn img {
+    filter: brightness(1.2) drop-shadow(0 0 3px rgba(255, 255, 255, 0.7));
+    transition: transform 0.3s ease;
+  }
+
+  .download-btn:hover img {
+    transform: translateY(-2px) scale(1.1);
   }
 
   h3{
