@@ -1,13 +1,13 @@
 <template>
   <h1>Meet Our Talents</h1>
     <div class="grid grid-1 ">
-      <ProfileCard 
+      <!--ProfileCard 
       class="card-1"
         pictureSrc="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Uday+Bhandari.jpg" 
         name="Uday Bhandary" 
         title="Chief Digital Transformation Officer" 
         linkedinUrl="https://www.linkedin.com/in/udaya-bhandary-93b2a454/"
-      />
+      /-->
       <ProfileCard 
       class="card-2"
         pictureSrc="https://ivislabsdocs.s3.ap-south-1.amazonaws.com/Amarnath.jpg" 
